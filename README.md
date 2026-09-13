@@ -35,7 +35,7 @@ Sebuah plugin WordPress yang ringan dan aman untuk mengelola perpustakaan digita
 
 ## 🗄️ Catatan Penting: Struktur Database
 
-Plugin ini mengasumsikan keberadaan dua tabel kustom di database WordPress Anda. Jika tabel ini belum dibuat, Anda perlu membuatnya terlebih dahulu melalui phpMyAdmin atau WP-CLI. Berikut adalah skema dasar yang diharapkan:
+Plugin ini mengasumsikan keberadaan dua tabel kustom di database WordPress Anda. Jika tabel ini belum dibuat, Anda perlu membuatnya terlebih dahulu melalui phpMyAdmin atau WP-CLI. Berikut adalah skema dasarnya:
 ```bash
 CREATE TABLE IF NOT EXISTS wp_diglib_ebooks (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -75,7 +75,7 @@ Kode plugin ini telah diaudit dan dibersihkan sesuai dengan WordPress Coding Sta
 5. Data Escaping: Output diamankan dengan esc_html(), esc_attr(), dan esc_url() untuk mencegah XSS.
 6. Prepared Statements: Semua query database menggunakan $wpdb->prepare() untuk mencegah SQL Injection.
 
-## 🗄️ Catatan Penting: Struktur Database
+## 🛡️ Praktik Keamanan yang Diterapkan
 
 Jika Anda menemukan bug atau memiliki ide fitur baru:
 1. Fork repositori ini.
