@@ -1,0 +1,29 @@
+# Secrets / environment
+.env
+.env.*
+!.env.example
+wp-config.php
+
+# Database dumps / backups
+*.sql
+*.sql.gz
+*.dump
+*.bak
+backup/
+backups/
+
+# Logs / debug output
+*.log
+debug.log
+wp-content/debug.log
+
+# WordPress runtime files
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
