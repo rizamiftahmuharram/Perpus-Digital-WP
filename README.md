@@ -65,7 +65,7 @@ CREATE TABLE IF NOT EXISTS wp_diglib_loans (
 
 💡 Tips: Anda dapat menambahkan logika pembuatan tabel ini secara otomatis menggunakan hook register_activation_hook di file utama plugin Anda agar lebih praktis.
 
-## 🗄️ Catatan Penting: Struktur Database
+## 🛡️ Praktik Keamanan yang Diterapkan
 
 Kode plugin ini telah diaudit dan dibersihkan sesuai dengan WordPress Coding Standards:
 1. Direct Access Prevention: defined( 'ABSPATH' ) || exit; di baris pertama.
@@ -75,7 +75,7 @@ Kode plugin ini telah diaudit dan dibersihkan sesuai dengan WordPress Coding Sta
 5. Data Escaping: Output diamankan dengan esc_html(), esc_attr(), dan esc_url() untuk mencegah XSS.
 6. Prepared Statements: Semua query database menggunakan $wpdb->prepare() untuk mencegah SQL Injection.
 
-## 🛡️ Praktik Keamanan yang Diterapkan
+## 🤝 Kontribusi
 
 Jika Anda menemukan bug atau memiliki ide fitur baru:
 1. Fork repositori ini.
